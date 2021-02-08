@@ -7,7 +7,7 @@ pipeline {
     }
   }
   options {
-        copyArtifactPermission('shenlong*');
+        copyArtifactPermission('../shenlong/*');
     }
   stages {
     stage('Build') {
