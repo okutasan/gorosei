@@ -13,9 +13,10 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Kohmon'
-	sh 'mkdir builds'
-	sh 'cp *.go builds'
-	sh 'ls builds'
+        sh 'rm -rf builds'
+        sh 'mkdir builds'
+        sh 'cp *.go builds'
+        sh 'ls builds'
       }
     }
 
