@@ -22,7 +22,7 @@ pipeline {
   }
   post {
         always {
-            archiveArtifacts artifacts: 'builds/*.go, fingerprint: true
+            archiveArtifacts artifacts: 'builds/*.go', fingerprint: true
         }
     }
 }
